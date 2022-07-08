@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/css" href="catalog_20048807.css"?>
+<agiftcard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20048807.xsd">
+    <header des="header">
+        <st_logo></st_logo>
+        <st_name>Relik gaming</st_name>
+        <nav_bar>
+            <home>HOME</home>
+            <products>PRODUCTS</products>
+            <search>SEARCH</search>
+        </nav_bar>
+    </header>
+    
+    <body>
+        <giftcards >
+            <row>
+                <giftcard category="gaming" p_id="gc01" >
+                    <image atr="img1"/>
+                    <type>type: physical</type><!-- physical ID have no unique ID-->
+                    <cost> 10</cost>
+                    <validity>validity: 2 years</validity>
+                    <users> 2</users>
+                    <vouchers> 15</vouchers>
+                    <platform>platform: steam</platform>
+                    <availability>availability: available</availability>
+                    <delivery_mode>
+                        <dm1>deliverymode1: Instant</dm1>
+                        <dm2>deliverymode2: 1 week</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: no</return>
+                        <refund>refund: only in case of damage.</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                <giftcard category="entertainment" p_id="gc02">
+                    <image atr="img2"></image>
+                    <type un_id="dgc1">type: digital</type><!-- unique element for digital gift cards in schema -->
+                    <cost>15</cost>
+                    <validity>validity: 1 time</validity>
+                    <users> 1</users>
+                    <vouchers> 10</vouchers>
+                    <platform>platform: crunchyroll</platform>
+                    <availability>availability: available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: Instant</dm1>
+                        <dm2>dm2: 24 hrs</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: yes</return>
+                        <refund>refund: only in case of damage.</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                <giftcard category="restaurant" p_id="gc03">
+                    <image atr="img3"></image>
+                    <type un_id="dgc2">type: digital</type><!-- unique element for schema -->
+                    <cost>5</cost>
+                    <validity>validity: 3 years</validity>
+                    <users> 3</users>
+                    <vouchers> 10</vouchers>
+                    <platform>platform: Nando's</platform>s
+                    <availability>availability: not-available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: 1 week</dm1>
+                        <dm2>dm2: 2 weeks</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: no</return>
+                        <refund>refund: only in case of damage.</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                
+                
+                <giftcard category="ride-sharing" p_id="gc04">
+                    <image atr="img4"></image>
+                    <type>type: physical</type>
+                    <cost>20</cost>
+                    <validity>validity: 6 months</validity>
+                    <users>4</users>
+                    <vouchers> 20</vouchers>
+                    <platform>platform: uber</platform>
+                    <availability>availability: available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: Instant</dm1>
+                        <dm2>dm2: 1 week</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: no</return>
+                        <refund>refund: only in case of damage.</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                <giftcard category="e-commerce" p_id="gc05">
+                    <image atr="img5"></image>
+                    <type>type: physical</type>
+                    <cost>25</cost>
+                    <validity>validity: 1 years</validity>
+                    <users> 2</users>
+                    <vouchers> 15</vouchers>
+                    <platform>platform: E-Bay</platform>
+                    <availability>availability: available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: Instant</dm1>
+                        <dm2>dm2: 1 week</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail>E-mail</e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: no</return>
+                        <refund>refund: only in case of damage.</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                <giftcard category="gaming" p_id="gc06">
+                    <image atr="img6"></image>
+                    <type un_id="dgc3">type: digital</type>
+                    <cost>20</cost>
+                    <validity>validity: 1 year</validity>
+                    <users> 1</users>
+                    <vouchers> 30</vouchers>
+                    <platform>platform: PUBG</platform>
+                    <availability>availability: not available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: Instant</dm1>
+                        <dm2>dm2: 3 days</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: yes</return>
+                        <refund>refund: only in case of damage</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                <giftcard category="e-commerce" p_id="gc07">
+                    <image atr="img7"></image>
+                    <type>type: physical</type>
+                    <cost>10</cost>
+                    <validity>validity: 2 year</validity>
+                    <users> 4</users>
+                    <vouchers> 40</vouchers>
+                    <platform>platform: google play</platform>
+                    <availability>availability: available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: Instant</dm1>
+                        <dm2>dm2: 2 days</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback>
+                        <return>return: no</return>
+                        <refund>refund: only in case of damage</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+                <giftcard category="gaming" p_id="gc08">
+                    <image atr="img8"></image>
+                    <type>type: physical</type>
+                    <cost>15</cost>
+                    <validity>validity: 3 year</validity>
+                    <users> 3</users>
+                    <vouchers> 20</vouchers>
+                    <platform>platform: fortnite</platform>
+                    <availability>availability: not available</availability>
+                    <delivery_mode>
+                        <dm1>dm1: Instant</dm1>
+                        <dm2>dm2: 6 days</dm2>
+                    </delivery_mode>
+                    <recepient>
+                        <e-mail></e-mail>
+                    </recepient>
+                    <cashback currency="dollar" type="online">
+                        <return>return: no</return>
+                        <refund>refund: only in case of damage</refund>
+                    </cashback>
+                    <add>Add to cart</add>
+                </giftcard>
+            </row>
+        </giftcards>
+    </body>
+    <footer>
+        <help>
+            <paymentmeth>Payment method</paymentmeth>
+            <contactus>Contact Us</contactus>
+            <Customerservice>Customer Service</Customerservice>
+            <webaddress>www.relikstore.com</webaddress>
+        </help>
+        <storedetails>
+            <locations>
+                <situated>Location:</situated>
+                <country zip_code="CB21">UK</country>
+                <state>State: london</state>
+                <street>Street: Downing street</street>
+                <telenum>+4420898839</telenum>
+            </locations>       
+        </storedetails>
+    </footer>
+</agiftcard>

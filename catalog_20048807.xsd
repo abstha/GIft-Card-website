@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- defining simple type elements-->
+    <xs:element name="st_logo" type="xs:anyURI"/>
+    <xs:element name="st_name" type="xs:string"/>
+    <xs:element name="home" type="xs:string"/>
+    <xs:element name="products" type="xs:string"/>
+    <xs:element name="search" type="xs:string"/>
+    <xs:element name="cost" type="xs:positiveInteger"/>
+    <xs:element name="validity" type="xs:string"/>
+    <xs:element name="users" type="xs:positiveInteger"/>
+    <xs:element name="vouchers" type="xs:positiveInteger"/>
+    <xs:element name="platform" type="xs:string"/>
+    <xs:element name="availability" type="xs:string"/>
+    <xs:element name="dm1" type="xs:string"/>
+    <xs:element name="dm2" type="xs:string"/>
+    <xs:element name="e-mail" type="xs:string"/>
+    <xs:element name="return" type="xs:string"/>
+    <xs:element name="refund" type="xs:string"/>
+    <xs:element name="paymentmeth" type="xs:string"/> 
+    <xs:element name="contactus" type="xs:string"/>
+    <xs:element name="Customerservice" type="xs:string"/>
+    <xs:element name="webaddress" type="xs:string"/>
+    <xs:element name="situated" type="xs:string"/>
+    <xs:element name="state" type="xs:string"/>
+    <xs:element name="street" type="xs:string"/>
+    <xs:element name="telenum" type="xs:integer"/>
+
+    <!-- defining attributes-->
+    <xs:attribute name="des" type="xs:string"/>
+    <xs:attribute name="category"  type="xs:string" />
+    <xs:attribute name="p_id" type="xs:ID"/>
+    <xs:attribute name="atr" type="xs:string"/>
+    <xs:attribute name="un_id" type="xs:ID" />
+    <xs:attribute name="type" type="xs:ID"/>
+    <xs:attribute name="currency" type="xs:string"/>
+    <xs:attribute name="zip_code" type="xs:string"/>
+
+    <!-- defining complex elements-->
+    <xs:element name="header">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="st_logo" maxOccurs="1"/>
+                <xs:element ref="st_name"/>
+                <xs:element name="nav_bar"/>
+            </xs:sequence>
+            <xs:attribute ref="des"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="nav_bar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="home"/>
+                <xs:element ref="products"/>
+                <xs:element ref="search"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="body">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="giftcards"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="giftcards">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="row">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="giftcard" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:attribute ref="atr" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="type">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="un_id" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="giftcard" >
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="image"/>
+                <xs:element ref="type"/>
+                <xs:element ref="cost"/>
+                <xs:element ref="validity"/>
+                <xs:element ref="users"/>
+                <xs:element ref="vouchers" minOccurs="0"/>
+                <xs:element ref="platform"/>
+                <xs:element ref="availability"/>
+                <xs:element name="delivery_mode" minOccurs="0"/>
+                <xs:element name="recepient" minOccurs="0"/>
+                <xs:element name="cashback" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="category" use="required" />
+            <xs:attribute ref="p_id" use="required"/>
+            <xs:attribute ref="atr" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="delivery_mode">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dm1" minOccurs="0"/>
+                <xs:element ref="dm2" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="recepient">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="e-mail" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cashback">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="return" minOccurs="0"/>
+                <xs:element ref="refund" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="currency" use="optional"/>
+            <xs:attribute ref="type" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="footer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="help"/>
+                <xs:element name="storedetails"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <xs:element name="help">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="paymentmeth"/>
+                <xs:element ref="contactus"/>
+                <xs:element ref="Customerservice"/>
+                <xs:element ref="webaddress"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="storedetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="locations"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="locations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="situated"/>
+                <xs:element name="country"/>
+                <xs:element ref="state"/>
+                <xs:element ref="street"/>
+                <xs:element ref="telenum"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="country">
+        <xs:complexType>
+            <xs:attribute ref="zip_code" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    
+
+    <!-- defining complete xml document-->
+
+    <xs:element name="agiftcard">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="header"/>
+                <xs:element ref="body"/>
+                <xs:element ref="footer"/>
+            </xs:sequence>
+        </xs:complexType>   
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,354 @@
+header{
+    background-color: rgb(234, 104, 104);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    display:flex;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(245, 242, 239, 0.982), rgb(178, 248, 13));
+}
+st_logo{
+    content:url("./logo/Relik-logos/Relik-logos_black.png");
+    width:200px;
+    height: 90px;
+    float: left;
+    
+}
+
+@font-face {
+    font-family: "Russo";
+    src: url("RussoOne-Regular.ttf");
+}
+
+st_name{
+    font-family: Russo;
+    font-size:30px;
+    font-weight: 40;
+    float: left;
+}
+nav_bar{
+    display: flex;
+    margin-left: 850px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+agiftcard{
+   /*background-color: rgb(247, 131, 89);*/
+    background-image: linear-gradient(to right, rgba(246, 245, 245, 0), rgb(246, 226, 191));
+}
+home,products,search{
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-content: flex-end;
+}
+[atr="img1"]{
+    content: url("./image/steam.jpg");
+    width: 250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+    
+}
+[atr="img2"]{
+    content: url("./image/crynchuroll.jpg");
+    width: 250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 1px;
+    margin-right: 1900px;
+    margin-top: 10px;
+    
+}
+[atr="img3"]{
+    content: url("./image/ebay.jpg");
+    width: 250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+}  
+[atr="img4"]{
+    content: url("./image/uber.webp");
+    width: 250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+   
+}
+[atr="img5"]{
+    content: url("./image/nandos.png");
+    width: 250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+    
+}
+[atr="img6"]{
+    content:url("./image/pubg.png");
+    width:250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+[atr="img7"]{
+    content:url("./image/googleplay.webp");
+    width:250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+[atr="img8"]{
+    content:url("./image/fortnite2.jpeg");
+    width:250px;
+    border-radius: 15px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+giftcards{
+    display:flex;
+    /*width: 100%;*/
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 150px;
+    margin-right: 200px;
+}
+cost::before{
+    content:"cost:";
+}
+cost::after{
+    content:"$";
+}
+giftcard{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    /*
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    background-color: beige;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+country,state,street, telenum{
+    display: list-item;
+}
+add{
+    background-color: rgb(37, 234, 96);
+    text-align: center;
+    font-size: x-large;
+    border: 2px;
+    border-style: dashed;
+}
+add:hover{
+    transition: 0.3s;
+    background-color: azure;
+    cursor: pointer;
+}
+users::before{
+    content:"users:"
+}
+users::after{
+    content:"users"
+}
+vouchers::before{
+    content:"Discount";
+}
+vouchers::after{
+    content:"%";
+}
+row{
+    display:flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+[p_id="gc01"]{
+    width: 25%;
+    margin-top: 1px;
+    
+    text-overflow: ellipsis;
+}
+[p_id="gc02"]{
+    width: 25%;   
+}
+[p_id="gc03"]{
+    width: 25%;
+}
+[p_id="gc04"]{
+    width: 33%;
+}
+[p_id="gc05"]{
+    width: 33%;
+}
+[p_id="gc06"]{
+    width:33%;
+}
+descr{
+    display: block;
+}
+giftcard:hover{
+    /*transform: scale(1.1);*/
+    background-color: rgb(245, 148, 148);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    font-family: fantasy;
+    color: aliceblue;
+    height: 150px;
+    width: 100%;
+    
+}
+storedetails{
+    background-color: #000;
+    display: block;
+    flex-direction: column;
+    
+    margin-left: 600px;
+    justify-content: flex-end;
+}
+
+help{
+    display: flex;
+    flex-direction: row;
+}
+locations{
+    display: flex;
+    flex-direction: column;
+    
+}
+situated{
+    /*margin-top: 10px;*/
+    margin-right: 5px;
+    
+}
+webaddress{
+    margin-top: 110px;
+    justify-content: center;
+    margin-left: 350px;
+}
+state{
+   
+    justify-content: flex-start;
+}
+paymentmeth,contactus,Customerservice{
+    padding: 20px;
+}
+home:hover{
+    background-color: white;
+    color: #000;
+    transition: all .3s ease;
+}
+
+products:hover{
+    background-color: white;
+    color: #000;
+    transition: all .3s ease;
+}
+home::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+  
+home:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+home::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background-image: linear-gradient(to right, rgba(248, 194, 124, 0), rgb(94, 88, 255));;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+products::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+  
+products:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+products::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background-image: linear-gradient(to right, rgba(248, 194, 124, 0), rgb(132, 247, 74));;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+search::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+  
+search:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+search::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background-image: linear-gradient(to right, rgba(248, 194, 124, 0), rgb(248, 72, 251));;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+search:hover {
+    background-color: white;
+    color: #000;
+    transition: all .3s ease;
+}
+paymentmeth:hover{
+    background-color: aliceblue;
+    color:#000;
+    transition: all .3s ease;
+    height:30px;
+}
+contactus:hover{
+    background-color: aliceblue;
+    color:#000;
+    transition: all .3s ease;
+    height:30px;
+}
+Customerservice:hover{
+    background-color: aliceblue;
+    color:#000;
+    transition: all .3s ease;
+    height:30px;
+}
+webaddress{
+    font-size:20px;
+    color:darkmagenta;
+}
+refund{
+    display: block;
+}
+dm2{
+    display: block;
+}
